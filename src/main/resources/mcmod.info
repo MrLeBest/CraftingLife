@@ -1,0 +1,33 @@
+[
+{
+<<<<<<< HEAD
+  "modid": "flansmod",
+  "name": "Flan's Mod",
+  "description": "Guns, planes and other vehicles in Minecraft.",
+  "version": "${version}",
+  "mcversion": "${mcversion}",
+  "url": "http://www.flansmod.com",
+  "updateUrl": "",
+  "authorList": ["jamioflan"],
+  "credits": "All code contributors.",
+  "logoFile": "flansmod.png",
+  "screenshots": [],
+  "dependencies": []
+}
+]
+=======
+  "modid": "craftstudioapi",
+  "name": "CraftStudio API",
+  "description": "A CraftStudio API for models/animations support in Minecraft",
+  "version": "${version}",
+  "mcversion": "${mcversion}",
+  "url": "",
+  "updateJSON": "https://leviathan-studio.com/craftstudioapi/update.json",
+  "authorList": ["ZeAmateis", "Timmypote", "Elisee", "IncubeSupreme"],
+  "credits": "See https://github.com/Leviathan-Studio/CraftStudioAPI/blob/master/CREDITS.md",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]
+>>>>>>> 33504426b9d266aa7acdf8f626a13ec1dbfe2b32

@@ -1,0 +1,21 @@
+{
+   "klaxon": {
+       "category": "player",
+       "sounds": [
+           {
+               "name": "klaxon",
+               "stream": false
+           }
+       ]
+   },
+   
+      "policesirene": {
+       "category": "player",
+       "sounds": [
+           {
+               "name": "policesirene",
+               "stream": false
+           }
+       ]
+   }
+}
