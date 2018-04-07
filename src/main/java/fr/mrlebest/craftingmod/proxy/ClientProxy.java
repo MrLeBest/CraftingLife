@@ -1,11 +1,5 @@
 package fr.mrlebest.craftingmod.proxy;
 
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.FileNotFoundException;
-import java.io.InputStream;
-import java.net.URISyntaxException;
-
 import api.player.model.ModelPlayerAPI;
 import cpw.mods.fml.client.registry.ClientRegistry;
 import cpw.mods.fml.client.registry.RenderingRegistry;
@@ -67,7 +61,6 @@ import fr.mrlebest.craftingmod.tileentity.TileEntityPerceuse;
 import fr.mrlebest.craftingmod.tileentity.TileEntityPhone;
 import fr.mrlebest.craftingmod.tileentity.TileEntityStand;
 import fr.mrlebest.craftingmod.tileentity.TileEntityTrash;
-import fr.plaigon.mdlloader.MDLReader;
 import net.minecraft.client.model.ModelBiped;
 import net.minecraftforge.client.IItemRenderer;
 import net.minecraftforge.client.MinecraftForgeClient;
@@ -76,7 +69,6 @@ import net.minecraftforge.common.MinecraftForge;
 public class ClientProxy extends CommonProxy
 {
 
-    public static MDLReader reader;
     
     public ClientProxy()
     {
@@ -176,11 +168,6 @@ public class ClientProxy extends CommonProxy
 
     }
     
-    private void load(InputStream[] file) {
-        
-        reader = new MDLReader(file);
-        
-    }
 
     /*
      * @SubscribeEvent

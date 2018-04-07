@@ -26,6 +26,7 @@ import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 import fr.mrlebest.craftingmod.common.CraftingMod;
 import fr.mrlebest.craftingmod.common.network.PacketLock;
+import fr.mrlebest.craftingmod.item.Items;
 import io.netty.buffer.ByteBuf;
 import net.minecraft.client.Minecraft;
 import net.minecraft.entity.Entity;
@@ -1385,7 +1386,7 @@ public class EntityVehicle extends EntityDriveable implements IExplodeable
 
         VehicleType type = getVehicleType();
 
-		if(damagesource.damageType.equals("player") && damagesource.getEntity().onGround && (seats[0] == null || seats[0].riddenByEntity == null))
+		if(damagesource.damageType.equals("player") && damagesource.getEntity().onGround && (seats[0] == null || seats[0].riddenByEntity == null) && ((EntityPlayer)damagesource.getEntity()).getHeldItem() != null && ((EntityPlayer)damagesource.getEntity()).getHeldItem().getItem() == Items.itemMolette)
 		{
 			ItemStack vehicleStack = new ItemStack(type.item, 1, 0);
 			vehicleStack.stackTagCompound = new NBTTagCompound();
